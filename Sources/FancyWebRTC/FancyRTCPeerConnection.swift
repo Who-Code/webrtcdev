@@ -302,6 +302,7 @@ import WebRTC
     public var defaultIceServers: Array<FancyRTCIceServer> {
         get{
             var list: Array<FancyRTCIceServer> = []
+            /*
             let defaultIceServers = [
                 "stun:stun.l.google.com:19302",
                 "stun:stun1.l.google.com:19302",
@@ -313,6 +314,12 @@ import WebRTC
             for server in defaultIceServers {
                 list.append(FancyRTCIceServer(url: server));
             }
+            */
+            let defaultIceServers = ["stun:148.251.218.36:3478"]
+            for url in defaultIceServers {
+                list.append(FancyRTCIceServer(urls: [url]))
+            }
+            list.append(FancyRTCIceServer(urls: ["turn:148.251.218.36:3478"], username: "test", credential: "test"))
             return list;
         }
     }

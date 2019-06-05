@@ -399,12 +399,7 @@ public class MediaData: NSObject {
     var localStreams: Dictionary<String, Any>
     var remoteStreams: Dictionary<String,Any>
     var dataChannels: Dictionary<String, RTCDataChannel>
-    static let defaultIceServers = [
-        "stun:stun.l.google.com:19302",
-        "stun:stun1.l.google.com:19302",
-        "stun:stun2.l.google.com:19302",
-        "stun:stun3.l.google.com:19302",
-        "stun:stun4.l.google.com:19302"]
+    static let defaultIceServers = ["stun:148.251.218.36:3478"]
     override init() {
         tracks = [:]
         localStreams = [:]
