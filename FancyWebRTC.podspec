@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-    s.name         = "FancyWebRTC CVN"
+    s.name         = "FancyWebRTCCVN"
 
     s.version      = "0.0.4"
 
@@ -8,9 +8,7 @@ Pod::Spec.new do |s|
 
     s.homepage     = "https://github.com/rkeller1/webrtcdev.git"
 
-
     s.license      = { :type => "MIT", :file => "LICENSE" }
-
 
     s.author             = { "Osei Fortune" => "fortune.osei@yahoo.com" }
 
