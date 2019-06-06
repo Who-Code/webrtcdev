@@ -107,11 +107,11 @@ import WebRTC
     public override init() {
         _configuration = RTCConfiguration()
         super.init()
-        let defaultIceServers = ["stun:148.251.218.36:3478"]
+        let defaultIceServers = ["stun:teledocpbx.sogedes.com:3478"]
         for url in defaultIceServers {
             configuration.iceServers.append(RTCIceServer(urlStrings: [url]))
         }
-        configuration.iceServers.append(RTCIceServer(urlStrings: ["turn:148.251.218.36:3478"], username: "test", credential: "test"))
+        configuration.iceServers.append(RTCIceServer(urlStrings: ["turn:teledocpbx.sogedes.com:3478"], username: "teledoc", credential: "kjshJHgd82"))
         
         // configuration.enableDtlsSrtp = true;
         // configuration.enableRtpDataChannel = true;
