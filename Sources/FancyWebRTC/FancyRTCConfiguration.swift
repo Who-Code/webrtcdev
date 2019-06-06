@@ -112,6 +112,7 @@ import WebRTC
             configuration.iceServers.append(RTCIceServer(urlStrings: [url]))
         }
         configuration.iceServers.append(RTCIceServer(urlStrings: ["turn:teledocpbx.sogedes.com:3478"], username: "teledoc", credential: "kjshJHgd82"))
+        print(configuration.iceServers);
         
         // configuration.enableDtlsSrtp = true;
         // configuration.enableRtpDataChannel = true;

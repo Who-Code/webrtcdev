@@ -320,6 +320,7 @@ import WebRTC
                 list.append(FancyRTCIceServer(urls: [url]))
             }
             list.append(FancyRTCIceServer(urls: ["turn:teledocpbx.sogedes.com:3478"], username: "teledoc", credential: "kjshJHgd82"))
+            print(list);
             return list;
         }
     }

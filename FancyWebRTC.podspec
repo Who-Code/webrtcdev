@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
 
-    s.name         = "FancyWebRTC"
+    s.name         = "FancyWebRTC CVN"
 
-    s.version      = "0.0.3"
+    s.version      = "0.0.4"
 
     s.summary      = "A Fancy WebRTC library"
 
-    s.homepage     = "https://github.com/triniwiz/fancy-webrtc-ios"
+    s.homepage     = "https://github.com/rkeller1/webrtcdev.git"
 
 
     s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
     s.platform     = :ios, "9.0"
 
-    s.source       = { :git => "https://github.com/triniwiz/fancy-webrtc-ios.git", :tag => "#{s.version}" }
+    s.source       = { :git => "https://github.com/rkeller1/webrtcdev.git", :tag => "#{s.version}" }
 
     s.source_files  = "Sources/FancyWebRTC/*.{swift}"
 
