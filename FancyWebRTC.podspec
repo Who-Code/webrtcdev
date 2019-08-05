@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-    s.name         = "FancyWebRTCCVN"
+    s.name         = "FancyWebRTC"
 
     s.version      = "0.0.5"
 
