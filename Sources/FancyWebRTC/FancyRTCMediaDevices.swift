@@ -102,7 +102,7 @@ public class FancyRTCMediaDevices: NSObject {
                 // frameRate = rate ?? DEFAULT_FPS
                 
                 if (width != nil && type(of: width) ==  type(of: NSDictionary.self)) {
-                    var widthMap = width as! [AnyHashable:AnyHashable]
+                    let widthMap = width as! [AnyHashable:AnyHashable]
                     if ((widthMap["min"]) != nil) {
                         minWidth = widthMap["min"] as! Int
                     }
@@ -114,7 +114,7 @@ public class FancyRTCMediaDevices: NSObject {
                     }
                 }
                 if (height != nil && type(of: height) == type(of: NSDictionary.self)) {
-                    var heightMap = height as! [AnyHashable:AnyHashable]
+                    let heightMap = height as! [AnyHashable:AnyHashable]
                     if ((heightMap["min"]) != nil) {
                         minHeight = heightMap["min"] as! Int
                     }
